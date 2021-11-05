@@ -1,0 +1,29 @@
+package com.spring.study.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.spring.study.model.dao.UserDao;
+import com.spring.study.model.dto.UserDto;
+
+@Controller
+public class LoginTestController {
+	@Autowired
+	private UserDao userDao;
+	@RequestMapping(value="/loginindex", method = RequestMethod.GET)
+	public ModelAndView loginIndex() {
+	return new ModelAndView("login");
+	}
+	@ResponseBody
+	@RequestMapping(value="/login",method = RequestMethod.POST)
+	public String login(UserDto userdto) {
+		String flag=null;
+		flag=Integer.toString(userDao.login(userdto)) ;
+		return flag;
+	}
+
+}
