@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\qwe\web\kakao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2238669788.index
+\jspstudy\src\main\java
+D:\qwe\web\kakao\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3777117523.index
+\jspstudy\src\main\java

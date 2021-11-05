@@ -1,0 +1,67 @@
+[font에 관련된 스타일]
+- font-family : 글꼴, 글꼴 이름은 쉼표(,)로 구분, 글꼴 이름이 두 단어 이상이면 큰 따옴표로 묶는다.
+                브라우저는 앞에 있는 글꼴부터 보여준다.
+- font-style "normal, italic, oblique" : 기울임꼴을 적용
+- font-variant "normal, small-caps":
+                    small-caps 크기가 작은 대문자
+- font-weight "normal, bold, 100 ~ 900 ": 글자 굵기
+                normal = 400, bold = 700, 숫자는 인식 못하는 경우 있음.
+- font-size "숫자em(상위 element 크기에 배수), 숫자pt" : 글자 크기 유전되지 않음 -> px
+
+
+[텍스트에 관련된 스타일]
+- line-height "normal, 숫자, 숫자em,  %" : 줄간격
+- text-ident "숫자em, %, 숫자" : 들여쓰기, 음수사용시 내어쓰기
+- text-align "left, right, center, justify" : 텍스트나 이미지 수평정렬
+    자신의 자식요소에 정렬 해주는 스타일 기본적으로 자신의 가로크기가 설정되어야 한다
+- text-decoration " none, underline, overline, line-through": 줄 긋기 유전되지 않음
+- letter-spacing "normal, 숫자, 숫자em" : 글자 간격
+- word-spacing: 단어와 단어사이의 간격
+- text-transform "capitalize, uppercase, lowercase, none": 영문자 변환 첫글자만 대문자 소문자
+.vertical-align"baseline,sup,sub,middle,text-top, - top, text-bottom, bottom " : 
+텍스트나 이미지 수직정렬
+
+[색상과 배경에 관련된 스타일]
+
+http://www.colorpicker.com/
+
+- color "영문자, RGB": 글자 및 밑줄 색
+- background-color"영문자, RGB, transparent": 배경색
+- background-image "none, url(파일위치)": 배경 그림
+- background-repeat "repeat, repeat-x, repeat-y,no-repeat": 배경이미지 반복여부
+- background-attachment"scroll, fixed": 화면이 스크롤 될 때 이동여부
+- background-position"top, bottom, left,center, right, 가로%,세로%": 이미지 반복여부 가로p 세로p(음수 사용됨)
+
+
+[위치를 설정하는 스타일]
+float 배치
+float:left; 요소를 왼쪽 배치
+float:right; 요소를 오른쪽 배치
+*****웹페이지를 가운데 정렬은 margin: 0 auto;
+
+clear: float배치설정을 무시하고 새롭게 배치하는 속성
+clear:left;
+clear:right;
+
+margin:0; 요소의 테두리를 기준으로 바깥쪽 여백
+margin:0 0; 마진의 세로값 가로값
+margin:0 0 0; 위 좌우 아래
+margin:0 0 0 0; top right bottom left
+margin-top, margin-right, margin-bottom, margin-left 하나하나 마진을 적용할 때
+******두개 요소의 마진값이 중복이 될 때, 큰값이 적용됨.
+
+padding:0; 요소의 테두리를 기준으로 안쪽의 여백
+padding:0 0; 패딩의 세로값, 가로값
+padding:0 0 0; 위 좌우 아래
+padding:0 0 0 0;top right bottom left
+padding-top, padding-right,padding-bottom ,padding-left;하나하나 패딩을 적용할 때
+***** 패딩은 안쪽 여백이므로 값이 요소의 가로값, 세로값에서 벗어나면 요소의 크기가 변화됨
+
+
+******position들을 특정한 영역을 기준으로 할 때는
+        특정영역의 선택자에게 position:relative;함
+
+        position:absolute; 절대값으로 원하는 위치에 배치
+        position:relative; 상대적(다른요소에 영향을 받음)으로 원하는 위치에 배치
+        position:fixed; 원하는 위치에 고정하여 배치
+        position:static; 문서의 흐름에 맞춰서 배치

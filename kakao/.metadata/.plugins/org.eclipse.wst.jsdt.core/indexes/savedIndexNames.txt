@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+D:\qwe\web\kakao\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1753924172.index
+1843833765.index
+3317415324.index
+4278891352.index
+1241614005.index
