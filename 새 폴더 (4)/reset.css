@@ -1,0 +1,43 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+
+    font-family: "맑은 고딕";
+    font-size: 16px;
+}
+
+
+/* 메인 wrap */
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+}
+/* 로그인, 회원가입 wrap */
+.sign_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: thistle;
+}
+.sign_form_wrap{
+    width: 350px;
+
+    background-color: tomato;
+}
+
+
+/* 태그들 레이아웃 설정 */
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+ol, ul{
+    list-style: none;
+}
+li{
+    float: left;
+}
